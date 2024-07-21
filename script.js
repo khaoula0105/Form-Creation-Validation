@@ -5,8 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
+        // Retrieve username input value
         const usernameValue = document.getElementById('username').value.trim();
+
+        // Retrieve email input value
         const emailValue = document.getElementById('email').value.trim();
+
+        // Retrieve password input value
         const passwordValue = document.getElementById('password').value.trim();
 
         let isValid = true;
